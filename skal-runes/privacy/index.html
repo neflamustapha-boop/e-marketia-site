@@ -46,7 +46,7 @@
 <h2>3. Données enregistrées sur votre appareil</h2>
 <div class="table-scroll"><table>
 <tr><th>Donnée</th><th>Utilité</th></tr>
-<tr><td>Progression (étoiles par niveau, échecs récents sur un niveau, série de jours joués)</td><td>Reprendre le jeu, calculer l’aide au temps</td></tr>
+<tr><td>Progression (étoiles par niveau, échecs récents sur un niveau)</td><td>Reprendre le jeu, calculer l’aide au temps</td></tr>
 <tr><td>Solde de Jetons Runiques (monnaie du jeu, sans valeur réelle) et boosters possédés</td><td>Utiliser les bonus du jeu</td></tr>
 <tr><td>Mouvements de solde en attente d’envoi</td><td>Mettre à jour votre sauvegarde une fois la connexion revenue</td></tr>
 <tr><td>Compteurs quotidiens de publicités regardées</td><td>Appliquer les plafonds quotidiens</td></tr>
@@ -62,7 +62,7 @@
 <h2>4. Données transmises et prestataires</h2>
 <h3>Supabase : sauvegarde du solde et journal des mouvements</h3>
 <ul>
-<li><strong>Données :</strong> un identifiant anonyme créé automatiquement (suite de caractères aléatoire), votre solde de Jetons Runiques, vos boosters possédés, un numéro de version de la sauvegarde et sa date. Un <strong>journal des mouvements</strong> : chaque gain ou dépense de Jetons ou de boosters (motif, montant, solde après mouvement, origine, date, détails techniques tels que le niveau ou le produit concerné). Aucune donnée nominative, sauf si vous liez votre compte (ci-dessous). Comme tout service en ligne, Supabase enregistre aussi dans ses journaux techniques l’adresse IP et l’heure des connexions.</li>
+<li><strong>Données :</strong> un identifiant anonyme créé automatiquement (suite de caractères aléatoire), votre solde de Jetons Runiques, vos boosters possédés, un numéro de version de la sauvegarde et sa date. Un <strong>journal des mouvements</strong> : chaque gain ou dépense de Jetons ou de boosters (motif, montant, solde après mouvement, origine, date, détails techniques tels que le niveau ou le produit concerné) ; votre <strong>série de jours</strong> (nombre de jours, plus longue série, dernier jour joué et fuseau horaire enregistré à la première partie, le jour étant calculé par nos serveurs et non par votre appareil) ; la liste des niveaux sans chrono déjà récompensés (un rejeu n’en rapporte pas). Aucune donnée nominative, sauf si vous liez votre compte (ci-dessous). Comme tout service en ligne, Supabase enregistre aussi dans ses journaux techniques l’adresse IP et l’heure des connexions.</li>
 <li><strong>Hébergement :</strong> Francfort (Allemagne), Union européenne.</li>
 <li><strong>Finalités :</strong> sauvegarder votre solde pour ne pas perdre vos jetons, garantir son exactitude, traiter vos réclamations.</li>
 <li><strong>Conservation :</strong> sauvegarde et identifiant anonyme : jusqu’à votre demande de suppression, ou suppression automatique 24 mois après votre dernière activité (dernière ouverture connectée du jeu ou dernière mise à jour de la sauvegarde). Journal des mouvements sans lien avec un achat : 13 mois. Mouvements liés à un achat : voir « Achats intégrés ». Journaux techniques : de 1 à 28 jours selon l’offre Supabase souscrite (7 jours sur l’offre Pro). [À VALIDER JURIDIQUEMENT]</li>
@@ -192,7 +192,7 @@
 <h2>3. Data stored on your device</h2>
 <div class="table-scroll"><table>
 <tr><th>Data</th><th>Purpose</th></tr>
-<tr><td>Progress (stars per level, recent failures on a level, streak of days played)</td><td>Resume the game, compute the time assist</td></tr>
+<tr><td>Progress (stars per level, recent failures on a level)</td><td>Resume the game, compute the time assist</td></tr>
 <tr><td>Runic Token balance (in-game currency with no real-world value) and owned boosters</td><td>Use in-game boosters</td></tr>
 <tr><td>Balance movements waiting to be sent</td><td>Update your backup once the connection is back</td></tr>
 <tr><td>Daily counters of ads watched</td><td>Apply daily caps</td></tr>
@@ -208,7 +208,7 @@
 <h2>4. Data sent and service providers</h2>
 <h3>Supabase: balance backup and movement log</h3>
 <ul>
-<li><strong>Data:</strong> an automatically created anonymous identifier (a random string), your Runic Token balance, your owned boosters, a backup version number and its date. A <strong>movement log</strong>: every gain or spend of Tokens or boosters (reason, amount, balance after the movement, origin, date, technical details such as the level or product concerned). No personal identity data, unless you link your account (below). Like any online service, Supabase also records the IP address and time of connections in its technical logs.</li>
+<li><strong>Data:</strong> an automatically created anonymous identifier (a random string), your Runic Token balance, your owned boosters, a backup version number and its date. A <strong>movement log</strong>: every gain or spend of Tokens or boosters (reason, amount, balance after the movement, origin, date, technical details such as the level or product concerned); your <strong>daily streak</strong> (number of days, longest streak, last day played and the time zone recorded at your first game, the day being computed by our servers and not by your device); the list of untimed levels already rewarded (replaying them earns nothing). No personal identity data, unless you link your account (below). Like any online service, Supabase also records the IP address and time of connections in its technical logs.</li>
 <li><strong>Hosting:</strong> Frankfurt (Germany), European Union.</li>
 <li><strong>Purposes:</strong> back up your balance so you don’t lose your tokens, keep it accurate, handle your complaints.</li>
 <li><strong>Retention:</strong> backup and anonymous identifier: until you ask for deletion, or automatic deletion 24 months after your last activity (last connected launch of the game or last update of the backup). Movement log not related to a purchase: 13 months. Movements related to a purchase: see "In-app purchases". Technical logs: 1 to 28 days depending on the Supabase plan (7 days on the Pro plan). [À VALIDER JURIDIQUEMENT]</li>
